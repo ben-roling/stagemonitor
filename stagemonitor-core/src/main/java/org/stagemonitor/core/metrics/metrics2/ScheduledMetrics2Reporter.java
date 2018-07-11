@@ -33,7 +33,7 @@ public abstract class ScheduledMetrics2Reporter extends ScheduledReporter {
 	private boolean started;
 
 	protected ScheduledMetrics2Reporter(Builder builder) {
-		super(null, null, null, builder.getRateUnit(), builder.getDurationUnit(), builder.getExecutor());
+		super(null, null, null, builder.getRateUnit(), builder.getDurationUnit());
 		this.registry = builder.getRegistry();
 		this.filter = builder.getFilter();
 		this.executor = builder.getExecutor();

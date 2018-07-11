@@ -2,7 +2,7 @@ dependencies {
 	compile project(":stagemonitor-tracing")
 	compile project(":stagemonitor-jvm")
 	compile project(":stagemonitor-jdbc")
-	compile "io.dropwizard.metrics:metrics-json:$metricsVersion"
+	compile "com.codahale.metrics:metrics-json:$metricsVersion"
 	provided 'javax.servlet:javax.servlet-api:3.0.1'
 	// optional
 	provided 'net.sf.uadetector:uadetector-resources:2014.10'
